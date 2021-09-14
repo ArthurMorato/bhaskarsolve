@@ -40,6 +40,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   double _x1 = 0.0, _x2 = 0.0;
 
+  void _bhaskarSolve(){
+    if(true){
+
+    }
+  }
+
   void _bhaskarSolvePlus(){
     if(true){
 
@@ -68,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 90,
+        toolbarHeight: 60,
         shadowColor: Colors.amber,
         titleTextStyle: const TextStyle(
           color: Colors.black87,
@@ -79,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {
 
             },
@@ -108,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Center(
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                   child: const Text(
                     "Eu sou o Bhaskar, e vou ajudar você a resolver essa equação "
                         "de segundo grau.\n"
@@ -131,13 +137,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Flexible(
                     child: Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       child: TextField(
                         textAlign: TextAlign.center,
                         controller: aController,
                         cursorHeight: 25,
                         keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           contentPadding: EdgeInsets.all(0)
                           )
                       ),
@@ -145,13 +151,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Flexible(
                     child: Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       child: TextField(
                         textAlign: TextAlign.center,
                         controller: bController,
                         cursorHeight: 25,
                         keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           contentPadding: EdgeInsets.all(0)
                           )
                       ),
@@ -159,13 +165,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Flexible(
                     child: Padding(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       child: TextField(
                         textAlign: TextAlign.center,
                         controller: cController,
                         cursorHeight: 25,
                         keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                             contentPadding: EdgeInsets.all(0)
                         ),
                       ),
@@ -180,14 +186,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Text(
                       'x1 = $_x1',
-                      style: TextStyle(
-                        fontSize: 20,
+                      style: const TextStyle(
+                        fontSize: 22,
                       ),
                     ),
                     Text(
                       'x2 = $_x2',
-                      style: TextStyle(
-                        fontSize: 20,
+                      style: const TextStyle(
+                        fontSize: 22,
                       ),
                     ),
                   ]
@@ -195,6 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Center(
               child: Container(
+                padding: const EdgeInsetsDirectional.only(top: 20.0),
                 child: OutlinedButton.icon(
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(Colors.white60),
